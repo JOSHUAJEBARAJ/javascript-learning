@@ -24,3 +24,35 @@ Go breaks by default where Javascript need explicit break
 ```
 function declaration provides the hoisiting i,e even the function declared below it can be used function call it works  but it doesn't work in the latter
 ```
+
+- Explain the For each
+
+- What is the use of the [] access 
+
+
+```
+let a= "name"
+console.log(user['name'])
+console.log(user[a])
+```
+
+- How do you create the shorthand method for the object
+
+```
+let a = {
+  name: 'Joshua',
+  sayname(){
+    console.log(this.name)
+  }
+}
+
+a.sayname()
+```
+- Primitive Type vs Reference type
+
+```
+PRimitive type - uses the stack
+Reference type - uses the heap
+Reference uses the pointer where the primitive doesn't use the pointer 
+```
+> refer reference.js
