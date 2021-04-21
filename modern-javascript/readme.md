@@ -56,3 +56,16 @@ Reference type - uses the heap
 Reference uses the pointer where the primitive doesn't use the pointer 
 ```
 > refer reference.js
+
+
+How do you scroll 
+
+```
+window.scroll()
+```
+
+window is the parent object
+
+```
+window.console.log === console.log
+```
