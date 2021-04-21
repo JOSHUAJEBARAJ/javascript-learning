@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+ <textarea id="txtarea" >
+</textarea>
+  
+ <div id='content'></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.0/purify.min.js" integrity="sha512-wq6fhmAfPQaNbMZmk9vVufLnRGuGjQwSikopQjfe8ULRKgYRLf6v7vTze21YMMmKlEh3bg9MlWqBVdpJyTpqmw==" crossorigin="anonymous"></script>                                                                                    
+ <script>
+    var txtarea = document.getElementById('txtarea')
+    txtarea.oninput = ()=>{
+      const html= txtarea.value 
+      document.getElementById("content").innerHTML = DOMPurify.sanitize(html);
+   
+     // document.getElementById('content').innerHTML=html // vulnerable
+    }                        
+     
+   
+    </script>
+</html>
